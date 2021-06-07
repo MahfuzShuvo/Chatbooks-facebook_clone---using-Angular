@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chatbooks-e9336": {
+      "hosting": {
+        "chatbooks": [
+          "chatbooks-e9336"
+        ]
+      }
+    }
+  }
+}

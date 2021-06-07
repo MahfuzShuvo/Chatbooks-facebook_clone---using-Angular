@@ -1,0 +1,35 @@
+<div class="login-container">
+  <header class="login__header">
+    <div class="login__header_left">
+      <img src="assets/logo.png" alt="logo">
+      <h2>Chatbooks' helps you to connect with your buddies and share your thoughts</h2>
+    </div>
+    <div class="login__header_right">
+      <mat-card class="login__header_right_card">
+        <mat-card-content class="login__content">
+          <form (ngSubmit)="login(form)" #form="ngForm" class="login-form">
+            <input type="text" name="email" ngModel placeholder="Email address" required>
+            <input type="password" name="password" ngModel placeholder="Password" required>
+
+            <button
+              type="submit"
+              class="login-button"
+              [disabled]="form.invalid || form.pending"
+            >
+              SIGN IN
+            </button>
+          </form>
+
+          <a href="#">Forgot Password?</a>
+
+          <button class="create-account-button" (click)="openRegister()">Create New Account</button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </header>
+
+  <footer class="login__footer">
+    <!-- <img src="assets/footer_crop.jpg" alt="footer"> -->
+    <p>Copyright © 2021 Mahfzu Shuvo. All Rights Reserved.</p>
+  </footer>
+</div>
